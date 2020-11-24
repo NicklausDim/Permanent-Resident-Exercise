@@ -8,7 +8,7 @@ let asylumSeeker
 let livingCosts
 
 alert('Welcome to the Permanent Residency checker. Together we are going to figure out if you are eligible for the Permanent Residency!');
-alert('First of all, lets choose the PR category you want to check');
+alert('First of all, lets choose the your current visa status!');
 let categories = prompt('For Working Permit please write "1".\nFor Blue Card please write "2".\nFor Marriage please write "3".\nFor Asylum please write "4" .');
     if (categories == 1) {
         validResPerm = prompt('Do you currently have a valid residence permit?');
@@ -21,12 +21,12 @@ let categories = prompt('For Working Permit please write "1".\nFor Blue Card ple
                     if (currentlyWorking == "yes") {
                         germanLevel = prompt('Is your German level at least B1?');
                             if (germanLevel == "yes") {
-                                alert('Congratulations, you are eligible for a Working Permit!');
-                            } else {alert("I am sorry, you are not eligible for a Working Permit Permanent residency.");}
-                    } else {alert("I am sorry, you are not eligible for a Working Permit Permanent residency.");}
-                } else {alert("I am sorry, you are not eligible for a Working Permit Permanent residency.");}
-            } else {alert("I am sorry, you are not eligible for a Working Permit Permanent residency.");}
-        } else {alert("I am sorry, you are not eligible for a Working Permit Permanent residency.");}
+                                alert('Congratulations, you are eligible for Permanent residency!');
+                            } else {alert("I am sorry, you are not eligible for Permanent residency.");}
+                    } else {alert("I am sorry, you are not eligible for Permanent residency.");}
+                } else {alert("I am sorry, you are not eligible for Permanent residency.");}
+            } else {alert("I am sorry, you are not eligible for Permanent residency.");}
+        } else {alert("I am sorry, you are not eligible for Permanent residency.");}
     } 
 
     if (categories == 2) {
@@ -38,21 +38,21 @@ let categories = prompt('For Working Permit please write "1".\nFor Blue Card ple
                     if (livingInGermany == "yes") {
                         germanLevel = prompt('Do you have a B1 German certificate?')
                             if (germanLevel == "yes") {
-                                alert('Congratulations, you are eligible for a Working Permit!');
+                                alert('Congratulations, you are eligible for Permanent residency!');
                             } else {
                                 livingInGermany = prompt ("Do you live in Germany for more than 36 months?")
                                 if (livingInGermany == "yes") {
                                     germanLevel = prompt ("Do you have an A2 german certification?")
                                         if (germanLevel == "yes") {
-                                            alert("Congratulations, you are eligible for a Working Permit!")
-                                        } else { alert ("I am sorry, you are not eligible for a Working Permit Permanent residency.") }
+                                            alert("Congratulations, you are eligible for Permanent residency!")
+                                        } else { alert ("I am sorry, you are not eligible for Permanent residency.") }
                                 } else {
-                                    alert ("I am sorry, you are not eligible for a Working Permit Permanent residency.")
+                                    alert ("I am sorry, you are not eligible for Permanent residency.")
                                 }
                             }
-                    } else  { alert("I am sorry, you are not eligible for a Working Permit Permanent residency.")}
-                } else  { alert("I am sorry, you are not eligible for a Working Permit Permanent residency.")}
-        } else  { alert("I am sorry, you are not eligible for a Working Permit Permanent residency.")}
+                    } else  { alert("I am sorry, you are not eligible for Permanent residency.")}
+                } else  { alert("I am sorry, you are not eligible for Permanent residency.")}
+        } else  { alert("I am sorry, you are not eligible for Permanent residency.")}
     } 
 
 
@@ -62,9 +62,9 @@ let categories = prompt('For Working Permit please write "1".\nFor Blue Card ple
             if (marriage == 'yes') {
                 germanLevel = prompt ('Do you have a B1 certification?')
                     if (germanLevel == "yes") {
-                        alert("Congratulations, you are eligible for a Working Permit!")
-                    } else {alert ("I am sorry, you are not eligible for a Working Permit Permanent residency.")}
-            } else {alert ("I am sorry, you are not eligible for a Working Permit Permanent residency.")}
+                        alert("Congratulations, you are eligible for Permanent residency!")
+                    } else {alert ("I am sorry, you are not eligible for Permanent residency.")}
+            } else {alert ("I am sorry, you are not eligible for Permanent residency.")}
     }
 
 
@@ -76,16 +76,16 @@ let categories = prompt('For Working Permit please write "1".\nFor Blue Card ple
             germanLevel = prompt('Do you have C1 certification in German?')
                 if (germanLevel == "yes") {
                     livingInGermany = prompt ('Do you live in Germany for more than 3 years?')
-                        if (livingInGermany == "yes") { alert("Congratulations, you are eligible for a Working Permit!")}
-                        else {alert ("I am sorry, you are not eligible for a Working Permit Permanent residency.")}
+                        if (livingInGermany == "yes") { alert("Congratulations, you are eligible for Permanent residency!")}
+                        else {alert ("I am sorry, you are not eligible for Permanent residency.")}
                 } else { germanLevel = prompt('Do you have B1 certification in German?')
                     if (germanLevel == 'yes') {
                         livingInGermany = prompt ('Do you live in Germany for more than 5 years?')
                             if (livingInGermany == "yes") {
-                                alert("Congratulations, you are eligible for a Working Permit!")
-                            } else {alert ("I am sorry, you are not eligible for a Working Permit Permanent residency.")}
-                    } else {alert ("I am sorry, you are not eligible for a Working Permit Permanent residency.")}
+                                alert("Congratulations, you are eligible for Permanent residency!")
+                            } else {alert ("I am sorry, you are not eligible for Permanent residency.")}
+                    } else {alert ("I am sorry, you are not eligible for Permanent residency.")}
                         }
-        } else { alert ("I am sorry, you are not eligible for a Working Permit Permanent residency.")}
+        } else { alert ("I am sorry, you are not eligible for Permanent residency.")}
     }
     
